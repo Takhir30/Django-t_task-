@@ -1,0 +1,8 @@
+
+{% for form in forms %}
+    <form action="/formapp/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit"/>
+    </form>
+{% endfor %}

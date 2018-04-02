@@ -1,0 +1,6 @@
+{% for i in input %}
+    <form action="/inputs/" method="post">
+        {% csrf_token %}
+        {{ i }}
+    </form>
+{% endfor %}
